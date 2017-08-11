@@ -10,5 +10,5 @@ grep "<title>" raw.xml | tail -n +3 > temp.txt
 # output to text file with user specified title
 cut -d [ -f 3 temp.txt | cut -d ] -f 1 > $2.txt
 
-# remove temporary files
+# remove temporary file
 rm raw.xml temp.txt
